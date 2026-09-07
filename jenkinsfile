@@ -5,11 +5,11 @@ pipeline {
  REGISTRY = "myregistry.example.com"
  }
  stages {
- stage('Checkout') {
- steps {
- git branch: 'main', url: 'https://github.com/yourorg/yourapp.git'
- }
- }
+stage('Checkout') {
+    steps {
+        git branch: 'main', url: 'https://github.com/vikram2204/devops.git'
+    }
+}
  stage('Install Dependencies') {
  steps {
  sh 'npm install'
