@@ -39,12 +39,11 @@ pipeline {
  }
  }
  }
- stage('Deploy') {
- steps {
- sh "kubectl set image deployment/myapp
-myapp=${REGISTRY}/${IMAGE_NAME}:${env.BUILD_NUMBER}"
- }
- }
+stage('Deploy') {
+    steps {
+        sh "kubectl set image deployment/myapp myapp=${REGISTRY}/${IMAGE_NAME}:${env.BUILD_NUMBER}"
+    }
+}
  }
  post {
  success {
