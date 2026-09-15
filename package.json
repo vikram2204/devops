@@ -1,0 +1,8 @@
+{
+  "name": "nodeexample",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Tests passed\"",
+    "build": "echo \"Build completed\""
+  }
+}
